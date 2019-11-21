@@ -7,33 +7,36 @@
     --color-oscuro2: #004445;
     --color-medio1: #2c7873;
     --color-medio2: #6fb98f;
+    font-family: 'Literata', serif;
+    font-family: 'Prata', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto', sans-serif;
 }
-#body{
+#body{    
     margin: auto;
-    width: 95vw;
-    height: 2000px;
-    border: 1px solid red;
-}
-/*#boxCuadro{
-    background: linear-gradient(#2c7873, #004445 );
-    width: 100%;
-    height: 1800px;
-    padding-top:100px;
-}*/
-#cuadro{
-   
+    width: 98vw;
+    height: 410vmin;
     
+}
+/*/////////////// PARALLAX  //////////////*/
+#boxCuadro{    
+    background: linear-gradient(#bce7e4, orange );
     width: 100%;
-    height: 800px;
-   
+    height: 57.5vw;    
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#cuadro{    
+    width: 100%;
+    height: 90vw;   
    z-index: 1;
 }
-
 #five{
-    position: absolute;
-   
-    background: url(IMG-/BOSQUE/five.png); 
-  
+    position: absolute;   
+    background: url(IMG-/BOSQUE/five.png);  
     background-repeat:no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -43,10 +46,8 @@
     background-position: center;
 }
 #four{
-    position: absolute;
-    
-    background: url(IMG-/BOSQUE/four.png);
-    
+    position: absolute;    
+    background: url(IMG-/BOSQUE/four.png);    
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -85,22 +86,678 @@
     width: 100%;
     height: 800px;
     background-size: 100%;
-    z-index: 6;
-    
+    z-index: 6;    
 }
-
-
-
-/*main{
+#main{
     background: var(--color-oscuro1);
     position: relative;
     float: left;
     opacity: 0.5;
-    height:2000px;*/
+    height:2000px;
     
+}
+/*////////////// PORTADA  ////////////////*/
+
+#welcome-section{    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top:100px;
+}
+#portada2{
+    /*background: rgba(0,0,0, 0.2);   */
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    color: white;
+    z-index: 7;
+    position: absolute;
+    display: inline-block;
+    margin-top: 100px;
+    margin:auto;
+    font-size: 4vmin;    
+    line-height: 4vmax;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+#portada2> h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4vmax;
+}
+
+#portada2> h3, h2{
+    font-family: 'Literata', serif;
+    font-size: 2vmax;
+}
+/*///////   CURSOR  ////////*/
+.txt-type > .txt{
+    border-right: 0.1rem solid white;
+    padding-right: 1px
+    ;
+}
+
+/*////////   REDES -INTERRUCTOR ///////*/
+#redes{
+    z-index: 8;    
+    margin-top: 20%;
+}
+.redes{
+    width: 2vmax;
+    background: white;
+    border-radius: 5px;
+    align-items: flex-end;
+    padding: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
+}
+.redes:hover{
+    background: var(--color-medio1);
+    border:1px solid white;
+}
+#interructor1{
+    
+    width: 5vmax;
+    height: 32vw;
+    position: absolute;
+    margin: auto;
+    align-items: flex-end;
+    z-index: 7;
+    display: flex;
+}
+
+#interructor{
+    width: 2vmax;
+    height: 4vmax;
+    border: 2px solid white;
+    z-index: 7;
+    border-radius: 10px;     
+    margin-left: 1vmax;
+    justify-content: center;
+    align-items: flex-end;    
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding-top: 0px;
+}
+#bolita{
+    width:1.3vmax;
+    height: 1.3vmax;
+    border-radius:50%;
+    background: white;
+    z-index: 7;
+    align-self: start;  
+    margin-top: 0px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
+    animation-name: subebaja;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes subebaja{
+0%{
+    opacity: 0.2;
+}
+
+50%{
+    opacity: 0.5;
+    align-self: center;
+}
+
+100%{
+    align-self: flex-end;
+}
+}
+
+/*////////////  PRESENTACION    /////////*/
+
+#box1{
+    background: url(IMG-/fondoNegro.png);
+    width: 95vw;
+    height: 30vw;
+    position: absolute;
+    z-index: 8;    
+    padding: 10px 30px;
+    color: white;
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    font-size: 2.5vmin;
+    text-align: justify;
+}
+#box1 > p{
+    margin: 20px;
+   
+}
+#resumen > h2{
+   text-align: flex-end;
+   justify-items: center;   
+   border-radius: 5px;
+   position: absolute;   
+   padding: 0px;
+}
+#p1{
+    width: 50vw;
+    margin-left: 30vw;
+}
+/*////////////  ABOUT ME ///////////////////*/
+
+#box2{
+    background: #f1f1f2;
+    width: 100%;
+    height: 33vw;
+    position: relative;
+    float: right;
+    z-index: 7; 
+}
+#aboutMe{
+    background: #f1f1f2;
+    width: 98vw;
+    height: 50vw;
+    position: relative;  
+    border-bottom: 1px solid var(--color-medio1);
+    color: black;
+    z-index: 7;
+    display:flex;    
+}
+.aboutMe{
+    
+    width: 50%;
+    margin-top: 5vw;
+     padding: 2vw;
+}
+.aboutMe>h3{
+    text-align: center;
+    margin-bottom: 3vw;
+    border-bottom: 1px solid var(--color-medio1);
+    font-size: 2.5vmin;
+    font-family: 'Prata', serif;
+}
+#informacion li{
+    list-style: none;
+    padding: 0.5vw;
+    margin-left:2vw;
+    font-size: 2.5vmin;    
+}
+#profesionalSkill p{
+    text-align: justify;
+    font-size: 2.5vmin; 
+}
+#redes2{
+    z-index: 8;    
+    margin-top: 7%;
+    margin-left: 12vw;
+}
+.redes2{
+    width: 2vmax;
+    background: white;
+    border-radius: 5px;
+    align-items: flex-end;
+    padding: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
+}
+.redes2:hover{
+    background: var(--color-medio1);
+    border:1px solid white;
+}
+/*///////////////// PROYECTOS ////////////////////*/
+
+
+#projects{
+    background: #f1f1f2;
+    width: 98%;
+    height: 90vmax;
+    position: relative;  
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid var(--color-medio1);
+    z-index: 7;
+    display:flex;    
+    flex-direction: column;
+    -webkit-perspective: 3000;
+    perspective: 3000;
+}
+#proyectos1 h2{   
+    text-align: center;
+    font-size: 4vmin;
+    padding: 20px;
+}
+.boxProyectos{
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boxT{
+    height: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.proyectoImg{
+    width: 100%;   
+    height: 100%;
+}
+#projects h3{
+    font-size: 2.5vmin;
+    padding-left: 4px;
+    text-align: center;
+    
+}
+.proyectos{
+    margin: 2px;
+    transform-style: preserve-3d;
+    transition: 2s;
+    height: 100%;
+    width: 80%;
+}
+
+.proyectos:hover{
+    transform: rotateY(180deg);
+}
+.lado{
+    backface-visibility: hidden;
+    
+}
+.lado p{
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-size: 30px;    
+    margin-left: 50%;
+    backface-visibility: hidden;
+}
+.frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
+.enves{
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    background: var(--color-oscuro1);
+    color: white;   
+    transform: rotateY(180deg);
+}
+.enves p{
+    margin:30px 10px 10px 10px;
+    font-size: 2.5vmin;;
+}
+#ultima{
+    
+    padding-bottom:0px;
+    
+    
+}
+#last2{
+    width: 120px;
+    float: left;
+   
+}
+
+
+/*/////////////// LOGROS  ///////////////*/
+#logros{
+    position: absolute;  
+    background: #f1f1f2;
+    width: 90%;
+    height: 90vmin;
+    position: relative; 
+    margin: auto;
+}
+#logros h2{
+    text-align: center;
+}
+#logros ul{
+    position: relative;
+    width:80vmin;
+    height: 37vmin;
+    
+    padding: 20px;
+    margin: auto;
+}
+#hlogros{
+    text-align: center;    
+    font-size: 4vmin;
+}
+
+#estudios{
+    position: relative;
+    width:90vmin;
+    height: 40vmin;
+    background: rgba(30, 30, 150, 0.5);
+    border-radius: 5px;
+    margin: auto;
+}
+.certificados{
+    position: absolute;
+    width:40vmin;
+    height: 30vmin;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    top: 4vmin;
+    left: 1vmin;
+    border-radius: 6px;
+    transition: z-index, 1s;
+    box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#c1{
+    left: 10vmin;
+    background: url(IMG-/LOGROS/sena_java.png);
+    background-size: cover;
+    z-index: inherit 0;    
+}
+#c1:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+
+
+#c2{
+    left: 15vmin;
+    background: url(IMG-/LOGROS/sena_sistemasInformaticos.png);
+    background-size: cover;
+}
+#c2:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+
+#c3{
+    left: 20vmin;
+    background: url(IMG-/LOGROS/soloLearn_html.png);
+    background-size: cover;
+}
+#c3:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+#c4{
+    left: 25vmin;
+    background: url(IMG-/LOGROS/sololearn_jquery.png);
+    background-size: cover;
+}
+#c4:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+#c5{
+    left: 30vmin;
+    background: url(IMG-/LOGROS/sololearn_java.png);
+    background-size: cover;
+}
+#c5:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+#c6{
+    left: 35vmin;
+    background: url(IMG-/LOGROS/sololearn_javaScript.png);
+    background-size: cover;
+}
+#c6:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+#c7{
+    left: 40vmin;
+    background: url(IMG-/LOGROS/sena_sistemasInformaticos.png);
+    background-size: cover;
+}
+#c7:hover{
+    z-index: 2;
+    height: 35vmin;
+    width:45vmin;
+ }
+
+ /*//////////   FOOTER //////*/
+footer{
+    background:url(IMG-/fondoNegro.png);
+    position: absolute;  
+    width: 100%;
+    height: 40vmin;
+
+}
+
+/*////////////// NAV - MENU /////////////*/
+.menu-wrap{
+    position: fixed;  
+    top: 0;
+    left: 0;    
+    z-index: 9;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 30px;
+    height: 40px;
+    padding: 1rem;
+    background: var(--color-medio2);
+    opacity: 0.6;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.menu-wrap .hamburger > div:before, 
+.menu-wrap .hamburger > div:after{
+    content:'';
+    position: absolute;
+    z-index: 9;
+    top: -10px;
+    width: 100%;
+    height:2px;
+    background: inherit;
+}
+.menu-wrap .hamburger > div:after{
+    top: 10px;
+}
+.menu-wrap .toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+.menu-wrap .toggler:checked + .hamburger>div:before,
+.menu-wrap .toggler:checked + .hamburger>div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-wrap .toggler:checked:hover + .hamburger>div{
+    transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0,4s ease;
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .menu > div{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li{
+    list-style: none;
+    
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu-wrap .menu > div > div > ul > li > a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
 }
 
 
 
 
 
+
+
+
+
+/*/////////////////////////////////////////////////////*/
+/*////////////////   MEDIA -QUERIS////////////////////*/
+/*//////////////////////////////////////////////////////*/
+@media (min-width: 768px){
+    #p1{
+        width: 40vw;
+        margin-left: 30vw;
+        margin-top: 3vw;
+    }
+    #box1{
+        height: 25vw;
+    }
+    #box2{
+        height: 28vw;
+    }
+    #aboutMe{
+        height: 35vw;
+    }
+    .aboutMe{       
+        margin-top: 2vw;         
+    }
+    #informacion li{
+      width: 80%; 
+      margin-left:3vw;   
+    }
+    #profesionalSkill p{
+        width: 80%;  
+        
+    }
+    .aboutMe>h3{
+        text-align: center;
+        margin-bottom: 1vw;
+    }
+  
+            
+  #projects{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    }
+    
+}
+@media(min-width: 992px){
+    #p1{        
+        margin-top: 2vw;
+    }
+    
+    #box1{
+        height: 20vw;
+    }
+    #box2{
+        height: 21.5vw;
+    }
+    #aboutMe{
+        height: 24vw;
+    }
+    .aboutMe{       
+        margin-top: 1vw;         
+    }
+    #informacion li{
+        width: 80%; 
+        margin-left:8vw;   
+      }
+      .proyectos{
+        height: 100%;
+      }
+      #projects{
+        width: 60%;
+    /*    height: 55vw;*/
+        
+        } 
+        .boxProyectos{
+            height: 200px; 
+                    
+        }
+        .boxT{
+            height: 3.3vw;
+                       
+        } 
+        #logros{
+            display:flex;
+            width: 75%;
+            height: 60vmin;
+        }
+      
+    }
+@media(min-width: 1200px){
+    #p1{        
+        margin-top: 4vw;
+    }
+    #box1{
+        height: 15vw;
+    }
+    #box2{
+        height: 16vw;
+    }
+    #aboutMe{
+        height: 21vw;
+    } 
+    #informacion li{
+        width: 80%; 
+        margin-left:12vw;   
+      }    
+}
