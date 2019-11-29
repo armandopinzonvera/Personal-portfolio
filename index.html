@@ -1,146 +1,111 @@
-<!--
-
-- Se coloco un div con el id="box2" solo para posicionamiento de los elementos por debajo de la portada, siendo que esos elementos tienen position absolute
-
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="estiles.css">
+    <link rel="stylesheet" href="2estiles.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Literata|Prata|Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="IMG-/2chiqui.png">
+    <link rel="shortcut icon" href="IMG-/fotis.png 
+    ">
 
     <title>AJPV</title>
 </head>
 <body id="body">
-<header id="boxCuadro">
-   
-    <div id="cuadro">     
-      <div id="five" class="bosque">
-     
-      </div>
-      <div id="four" class="bosque">
-         
-      </div>
-      <div id="tres" class="bosque">
+
+<div id="five" class="bosque"></div>
+<div id="four" class="bosque"></div>      
+<div id="tres" class="bosque"></div>       
+<div id="dos" class="bosque"></div>             
+<div id="uno" class="bosque"></div>  
+<div id="boxcuadro"></div>       
+ 
+<header id="header">
         
-      </div>
-      <div id="dos" class="bosque">
-         
-      </div>
-      <div id="uno" class="bosque">        
-      </div>        
+          <h3 class="presentacion">Hola soy<br></h3>  
+          <h1 class="presentacion">Armando Pinzon Vera</h1>
+          <h2 class="presentacion" id="typeWriter"> Soy un
+             <span class="txt-type" data-wait="2000" data-words='["Desarrollador", "Creativo", "Analista"]'></span> 
+          </h2>
+        
+        <div id="redes">
+           <a href="https://github.com/armandopinzonvera?tab=stars"  target="blank" title="github"><img class="redes" src="IMG-/github.png" alt="" id="profile-link"></a>
+           
+           <a href="https://www.linkedin.com/feed/" target="blank" title="linkedin"><img class="redes" src="IMG-/linkedin.png" alt=""></a>
+           
+           <a href="https://www.instagram.com/armandopinzonv/" target="blank" title="instagram"><img class="redes" src="IMG-/instagram.png" alt=""></a>
+           
+           <a href="https://codepen.io/armandopinzonvera" target="blank" title="codepen"><img class="redes" src="IMG-/codepen.png" alt=""></a>
+           
+        </div>
+    
+           <div id="interructor">
+           <div id="bolita"></div>           
+           </div>
      
+ </header>
 
-   <div id="welcome-section">
-     <div id="portada2">
-       <h3 class="presentacion">Hola soy<br></h3>  
-       <h1 class="presentacion">Armando Pinzon Vera</h1>
-       <h2 class="presentacion" id="typeWriter"> Soy un
-        <span class="txt-type" data-wait="2000" data-words='["Desarrollador", "Creativo", "Analista"]'></span> 
-       </h2>
-     </div>
-     <div id="redes">
-      <a href="https://github.com/armandopinzonvera?tab=stars"  target="blank" title="github"><img class="redes" src="IMG-/github.png" alt="" id="profile-link"></a>
-
-       <a href="https://www.linkedin.com/feed/" target="blank" title="linkedin"><img class="redes" src="IMG-/linkedin.png" alt=""></a>
-
-      <a href="https://www.instagram.com/armandopinzonv/" target="blank" title="instagram"><img class="redes" src="IMG-/instagram.png" alt=""></a>
-
-       <a href="https://codepen.io/armandopinzonvera" target="blank" title="codepen"><img class="redes" src="IMG-/codepen.png" alt=""></a>
-
-     </div>
-     <div id="interructor1"> 
-      <div id="interructor">
-        <div id="bolita"></div>
-        <a href="#resumen"></a>
-       </div>
-     </div>
-
-   </div>
-
-
-  </div>
-</header>
-<nav class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-        <div>
+ <nav class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
             <div>
-              <ul>
-                <li><a href="#aboutMe">Resumen</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#logros">Logros</a></li>
-              </ul>
+                <div>
+                  <ul>
+                    <li><a href="#aboutMe">Resumen</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#logros">Logros</a></li>
+                  </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-
-<div id="box1">
-    <div id="resumen" >
-      <h2>Armando Pinzon Vera</h2>
-      <p id="p1">
-          Soy una persona comprometida con mis metas, que disfruta trabajar en proyectos que me permitan aplicar todas mis habilidades y potenciarlas, que le gusta desarrollar ideas y pensar en la manera más creativa de hacer las cosas. Que asume las dificultades como retos y persevero hasta superarlas; con capacidad para trabajar en equipo, valorar los aportes ajenos y contribuir con mis conocimientos. 
-          
-          
-          </p>
-    </div>
-</div>
-    <div id="box2">
-    </div>
+    </nav>
+<section id="resumen">
+        
+        <p>
+        Soy una persona comprometida con mis metas, que disfruta trabajar en proyectos que me permitan aplicar todas mis habilidades y potenciarlas, que le gusta desarrollar ideas y pensar en la manera más creativa de hacer las cosas. Que asume las dificultades como retos y persevero hasta superarlas; con capacidad para trabajar en equipo, valorar los aportes ajenos y contribuir con mis conocimientos. 
+        </p>
    
-    <article id="aboutMe">
+</section>
 
-      <section class="aboutMe" id="informacion">
-        <h3>Informacion Personal</h3>
-        <ul>
-            <li><strong>☏ - (57)3003156454 </strong></li>
-            <li> <strong>☏ - (57)3006429507 </strong></li>
-            <li> <strong>🏛 - Barrio Teusaquillo - Bogota - Colombia</strong></li>
-            <li> <strong>✉ - <email>armandopinzonvera@gmail.com</email></strong></li>
-            <li> <strong>✉ - <email>onpcor@gmail.com</email></strong></li>  
-            <li>🌐 - <strong>www.armandopinzonv.XX</strong></li>
-        </ul>
-      </section>
-      <section class="aboutMe" id="profesionalSkill">
+<h2 class="fondoBosque">Informacion Personal</h2>
+<section id="informacion">
+    
+    <ul>
+        <li><strong>☏ </strong>- (57)3003156454 </li>
+        <li><strong>☏ </strong>- (57)3006429507 </li>
+        <li> <strong>🏛 </strong> - Barrio Teusaquillo - Bogota - Colombia</strong></li>
+        <li> <strong>✉</strong> - <email>armandopinzonvera@gmail.com</email></li>
+        <li> <strong>✉ </strong>- <email>onpcor@gmail.com</email></li>  
+        <li>🌐 - www.armandopinzonv.tk</li>
+    </ul>
+
+    <figure id="portrait">
+        <img src="IMG-/fotis.png" alt="retrato del autor">
+    </figure>
+
+    <article id="profesionalSkill">
         <h3> Habilidades Profesionales</h3>
-        <p>conocimientos en programación bajo lenguaje JAVA, HTML5, PHP y manejo de Base de datos MySQL.
+        <p>Conocimientos en programación con lenguaje JAVA, HTML5, PHP y manejo de Base de datos MySQL. Además  en manejo de sistemas operativos con Kernel Linux y manejo de la herramienta Git.
+        </p>
+        <div id="redes2">
+            <a href="https://github.com/armandopinzonvera?tab=stars"  target="blank" title="github"><img class="redes2" src="IMG-/github.png" alt=""></a>
+              
+            <a href="https://www.linkedin.com/feed/" target="blank" title="linkedin"><img class="redes2" src="IMG-/linkedin.png" alt=""></a>
+              
+            <a href="https://www.instagram.com/armandopinzonv/" target="blank" title="instagram"><img class="redes2" src="IMG-/instagram.png" alt=""></a>
+              
+            <a href="https://codepen.io/armandopinzonvera" target="blank" title="codepen"><img class="redes2" src="IMG-/codepen.png" alt=""></a>
+              
+        </div>
+    </article>
+</section>
 
-            Además tengo conocimientos en manejo de sistemas operativos con Kernel Linux y manejo de la herramienta Git.
-            
-            </p>
-           
-            <div id="redes2">
-                <a href="https://github.com/armandopinzonvera?tab=stars"  target="blank" title="github"><img class="redes2" src="IMG-/github.png" alt=""></a>
-          
-                 <a href="https://www.linkedin.com/feed/" target="blank" title="linkedin"><img class="redes2" src="IMG-/linkedin.png" alt=""></a>
-          
-                <a href="https://www.instagram.com/armandopinzonv/" target="blank" title="instagram"><img class="redes2" src="IMG-/instagram.png" alt=""></a>
-          
-                 <a href="https://codepen.io/armandopinzonvera" target="blank" title="codepen"><img class="redes2" src="IMG-/codepen.png" alt=""></a>
-          
-               </div>
-      </section>
-         
-      </article>
-
-      <article id="proyectos1">
-        <h2>Proyectos</h2>
-
-      <div id="projects"> 
-<div class="boxProyectos">
-  
-          <figure class="proyectos">
-         
-          <div class="enves">
+<h2 id="projectT" class="fondoBosque">Proyectos</h2>
+<article id="proyectos1">
+        
+   <figure class="proyectos" id="p1">
+           <div class="enves">
             <p>
               Con diseño responsive y una animacion en css y efecto de intercambio de imagenes con botones utilizando .js, ademas con un formulario que envia a una base de datos
             </p>
@@ -149,127 +114,104 @@
             <p>🗘</p>
               <img src="IMG-/PROYECTOS/florMorada.png" class="proyectoImg" alt="proyecto pagina web vivero flor morada">          
             </div>        
-          </figure>
+   </figure>
           
-          <figure class="proyectos" > 
-            
+   <figure class="proyectos" id="p2">             
           <div class="enves"> 
-              <p>
-                  Con diseño responsive y conexion a una base de datos en donde se procesa la informacion de opinion
-                </p>
+            <p>
+             Con diseño responsive y conexion a una base de datos en donde se procesa la informacion de opinion
+            </p>
           </div>  
           <div class="frente lado">
               <p>🗘</p>
-          <img src="IMG-/PROYECTOS/encuesta.png" class="proyectoImg" alt="Formato de encuesta de servicios - vivero flor morada"> 
-        </div>       
-          </figure>
- </div>
+              <img src="IMG-/PROYECTOS/encuesta.png" class="proyectoImg" alt="Formato de encuesta de servicios - vivero flor morada"> 
+         </div>       
+  </figure>
 
-
-      <div class="boxT">
-         <a href="http://www.flormorada.tk/" target="_blank"><h3 id="primera" >Pagina Presentacion<br> vivero flor morada</h3> </a>
-
-        <a href="http://www.flormoradaes.tk/" target="_blank"> <h3>Formato de encuesta de servicios<br> - vivero flor morada</h3></a> 
-      </div>
-
-      <div class="boxProyectos">
-          
-           <figure class="proyectos" id="inventario">          
-            <div class="enves">
-                <p>
-                    Con diseño responsive y conexion a una base de datos en donde se procesa la informacion
-                  </p>           
-            </div>
-            <div class="frente lado">
-                <p>🗘</p>
+  <figure class="proyectos" id="p3">          
+        <div class="enves">
+            <p>
+            Con diseño responsive y conexion a una base de datos en donde se procesa la informacion
+            </p>           
+        </div>
+        <div class="frente lado">
+            <p>🗘</p>
             <img src="IMG-/PROYECTOS/inventario.png" class="proyectoImg" alt="Formato registro de inventario vivero flor morada"> 
-            </div> 
-            
-            </figure>
-          
-           <figure class="proyectos" id="nutri">
-           
-           <div class="enves"> 
-              <p>
-                  Con diseño responsive, presenta informacion tecnica sobre las estrategias para nutricion de vegetales en contenedores
-                </p>          
-           </div> 
-           <div class="frente lado">
-              <p>🗘</p>
-           <img src="IMG-/PROYECTOS/tecnica.png" class="proyectoImg" alt="Guia tecnica de nutricion vegetal - vivero flor morada">
-           </div>
-           
-           </figure>
-      </div>
-        
-       <div class="boxT">
-           <h3 id="invenT">Formato registro de inventario<br> vivero flor morada</h3>
-          <a href="http://plantsnutrition.gq/" target="_blank"><h3 id="nutriT">Guia tecnica de nutricion vegetal<br> - vivero flor morada</h3> </a> 
-       </div>
-
-<div class="boxProyectos">
-  
-          <figure class="proyectos"> 
-           
-          <div class="enves">   
-              <p>
-                  Con diseño responsive, incluye informacion bibliografica de la persona que dilucido la manera como las plantas fijan carbono a los carbohidratos.
-                </p>        
-          </div> 
-          <div class="frente lado">
-              <p>🗘</p>
-          <img src="IMG-/PROYECTOS/tributo.png" class="proyectoImg" alt="Pagina de tributo al Dr. Melvin Calvin">
         </div>         
-          
-        </figure>
-        <figure class="proyectos" ><!--///////******//////--> </figure>
-</div>
-    <div class="boxT" id="last">
-       <a href="http://www.mcalvin.ga/" target="_blank"> <h3 id="ultima">Pagina de tributo al Dr. Melvin Calvin</h3></a> 
+  </figure>
 
-        <h3 id="last2"><!--///////******//////--> </h3>
-    </div>
-    
+  <figure class="proyectos" id="p4">           
+        <div class="enves"> 
+           <p>
+               Con diseño responsive, presenta informacion tecnica sobre las estrategias para nutricion de vegetales en contenedores
+             </p>          
+        </div> 
+        <div class="frente lado">
+           <p>🗘</p>
+           <img src="IMG-/PROYECTOS/tecnica.png" class="proyectoImg" alt="Guia tecnica de nutricion vegetal - vivero flor morada">
+        </div>
+  </figure>
+
+  <figure class="proyectos" id="p5">            
+        <div class="enves">   
+            <p>
+                Con diseño responsive, incluye informacion bibliografica de la persona que dilucido la manera como las plantas fijan carbono a los carbohidratos.
+              </p>        
+        </div> 
+        <div class="frente lado">
+            <p>🗘</p>
+        <img src="IMG-/PROYECTOS/tributo.png" class="proyectoImg" alt="Pagina de tributo al Dr. Melvin Calvin">
+      </div> 
+  </figure>
+      
+     <a href="http://www.flormorada.tk/" target="_blank" id="hp1" class="proRef"><p>Pagina Presentacion<br> vivero flor morada</p> </a>
+
+     <a href="http://www.flormoradaes.tk/" target="_blank" id="hp2" class="proRef"> <p>Formato de encuesta de servicios<br> - vivero flor morada</p></a> 
+        
+     <a href="#" id="hp3" class="proRef"> <p>Formato registro de inventario<br> vivero flor morada</p></a>
+
+     <a href="http://plantsnutrition.gq/" target="_blank" id="hp4" class="proRef"><p>Guia tecnica de nutricion vegetal<br> - vivero flor morada</p> </a> 
+      
+     <a href="http://www.mcalvin.ga/" target="_blank" id="hp5" class="proRef"> <p>Pagina de tributo al Dr. Melvin Calvin</p></a> 
+     
+</article>
+
+<h2 id="logrosT" class="fondoBosque">Logros</h2>
+<section id="logros">
+  <ul>
+    <li id="lc1">Desarrollo de aplicaciones con interfaz grafica,<br> manejo de eventos, clases y objetos en java (40 horas)</li>
+    <li id="lc2">Metodologia de programacion de<br> sistemas informaticos (40 horas)</li>
+    <li id="lc3">HTML fundamentals course</li>
+    <li id="lc4">jQuery tutorial course</li>
+    <li id="lc5" >Java tutorial course</li>
+    <li id="lc6">JavaScript tutorial course</li>
+    <li id="lc7">Responsive web design (300horas)</li>
+  
+  </ul>
+      <div id="estudios">
+        <div class="certificados" id="c1"></div>
+        <div class="certificados" id="c2"></div>
+        <div class="certificados" id="c3"></div>
+        <div class="certificados" id="c4"></div>
+        <div class="certificados" id="c5"></div>
+        <div class="certificados" id="c6"></div>
+        <div class="certificados" id="c7"></div>
       </div>
-      </article>
 
-      
-    <h2 id="hlogros">Logros academicos</h2>
-    <section id="logros">
-      <ul>
-        <li id="lc1">Desarrollo de aplicaciones con interfaz grafica,<br> manejo de eventos, clases y objetos en java (40 horas)</li>
-        <li id="lc2">Metodologia de programacion de<br> sistemas informaticos (40 horas)</li>
-        <li id="lc3">HTML fundamentals course</li>
-        <li id="lc4">jQuery tutorial course</li>
-        <li id="lc5" >Java tutorial course</li>
-        <li id="lc6">JavaScript tutorial course</li>
-        <li id="lc7">Responsive web design (300horas)</li>
-      
-      </ul>
-          <div id="estudios">
-            <div class="certificados" id="c1"></div>
-            <div class="certificados" id="c2"></div>
-            <div class="certificados" id="c3"></div>
-            <div class="certificados" id="c4"></div>
-            <div class="certificados" id="c5"></div>
-            <div class="certificados" id="c6"></div>
-            <div class="certificados" id="c7"></div>
-          </div>
-    
 
-    
-    </section>
+
+</section>
 
 <footer style="  
  display: flex;
  align-items: flex-end;
 font-size: 12px;
 padding: 10px;
-color: white">
+">
     <div class="foot1">
         <p>Telefonos: 3003156454<br/>
             3006429507<br/>
-            (57-1-3399163)<br/>
+            
             Bogota - Colombia
         </p>
         </div>
@@ -278,8 +220,8 @@ color: white">
         padding-top: 30px;
    
         ">
-            <p>	Flor Morada<br>
-                Diseño web: armandopinzonvera@gmail.com<br> -
+            <p>	
+                Diseño: armandopinzonvera@gmail.com<br> -
                 onpcor@gmail.com
             </p>
 
@@ -288,7 +230,15 @@ color: white">
 
 
 </footer>
-<div id="footx"></div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,6 +246,6 @@ color: white">
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script>
-<script src="main.js"></script>    
+<script src="main.js"></script> 
 </body>
 </html>
